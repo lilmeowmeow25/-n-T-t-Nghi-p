@@ -1,0 +1,617 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    background: #2d3436;
+}
+a:hover 
+{
+     color:white; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+
+/*1menu*/
+.menu
+{   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfe6e9;
+}
+/* }
+.menu li.active
+{
+    border-bottom: 2px solid #d63031;
+}
+.menu li.active:hover
+{
+    border-bottom: 2px solid #d63031;
+} */
+
+.menu ul
+{
+    transition: .5s;
+}
+.menu li
+{
+    list-style: none;
+    text-align: center;
+    display: block;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+}
+.menu li:last-child
+{
+    border-right: none;
+}
+.menu li:hover
+{
+    border-bottom: 2px solid #636e72;
+}
+.menu li a
+{
+    text-decoration: none;
+    padding: 0 50px;
+    display: block;
+}   
+.menu li a img
+{
+    margin: 0 auto 10px;
+} 
+.menu li a .name
+{
+    color: #fff;
+}
+
+
+
+/* tổngquan */
+.tổngquan
+{
+   padding-top: 100px;
+}
+.row
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.row .col50
+{
+    position: relative;
+    width: 50%;
+    margin: 10px 0;
+    text-align: initial;
+}
+.titile
+{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d63031;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.row .col50 p
+{
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #fff;
+}
+.row .col50 ul li
+{
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #fff;
+    list-style: none;
+}
+.row .col50 .btn
+{
+    margin-top: 20px;
+}
+.row .col50 .btn button
+{
+    padding: 10px 10px;
+    outline: none;
+    cursor: pointer;
+    background: #d63031;
+    border: none;
+    border-radius: 2px;
+    transition: .5s;
+    color: #fff;
+}
+.row .col50 .btn button:hover
+{
+    background: #fff;
+    color: #000;
+}
+.row .col50 .imgBx 
+{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+.row .col50 .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.row .col50 .text
+{
+    text-align: right;
+    margin-right: 100px;
+}
+.flex 
+{
+   display: flex;
+}
+.flex .text
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.flex .text p
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border-left: 4px solid #d63031;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+.btn{
+    font-size: 20px;
+}
+.lec_neon_subtitle{
+   font-size: 20px;
+}
+
+
+/* thư viện */
+.thuvien
+{
+   
+}
+.thuvien .titile
+{
+    text-transform: uppercase;
+}
+.imgbx
+{
+    cursor: pointer;
+}
+
+
+/* ngoại thức */
+.ngoaithuc
+{
+   
+}
+.ngoaithuc .row .col50.one
+{
+    position: relative;
+    height: 300px;
+    padding: 50px 50px 0;
+}
+.ngoaithuc .row .col50.one p
+{
+    font-size: 20px;
+}
+.ngoaithuc .row .col50 .imgBx
+{
+    width: 100%;
+    height: 300px;
+}
+.swiper-container
+{
+    width: 100%;
+    padding-bottom: 200px;
+    position: relative;
+}
+.swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+    filter: blur(4px);
+}
+.swiper-slide .content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    transition: .5s;
+    color: #fff;
+    font-size: 20px;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+}
+.swiper-slide:hover .content
+{
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    visibility: visible;
+}
+.swiper-slide-active
+{
+    filter: blur(0px);
+}
+.swiper-container-3d .swiper-slide-shadow-left 
+{
+    background: none;
+}
+.swiper-container-3d .swiper-slide-shadow-right
+{
+    background-image: none;
+}
+img.mfp-img 
+{
+    width: 500px;
+    max-width: 100%;
+    height: 500px;
+    display: block;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: 40px 0 40px;
+    margin: 0 auto;
+}
+/* tinhnang */
+
+.tínhnăng
+{
+   
+}
+.tínhnăng p
+{
+    font-size: 2em;
+    color: #fff;
+}
+
+.tínhnăng .wrapper 
+{
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
+}
+
+ .tínhnăng .buttonWrapper 
+ {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+  }
+   .tínhnăng button 
+   {
+    letter-spacing: 3px;
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 20px;
+  }
+  .tínhnăng button.active 
+  {
+    background-color: #d63031;
+    color: #fff;
+  }
+  .tínhnăng .content 
+  {
+    display: none;
+    padding: 10px 20px;
+  }
+.tínhnăng .content.active 
+{
+    display: block;
+}
+.tínhnăng .contentWrapper .flex
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tínhnăng .contentWrapper .box
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+    transition: .5;
+    background: #fff;
+}
+.tínhnăng .contentWrapper .box .imgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.tínhnăng .contentWrapper .box .imgBx img
+{
+    max-width: 100%;
+}
+.tínhnăng .contentWrapper .box .textbx
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 10px;
+}
+.tínhnăng .contentWrapper .box .textBx h2
+{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    color: #000;
+    padding-left: 10px;
+    border-left: 5px solid #636e72;
+    transition: .5s;
+}
+.tínhnăng .contentWrapper .box:hover .textBx h2
+{
+    border-left: 5px solid #d63031;
+}
+.tínhnăng .contentWrapper .box .textBx p
+{
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+}
+
+/* phụ kiện */
+.phukien
+{
+   
+}
+.phukien p
+{
+    font-size: 2em;
+    color: #fff;
+}
+
+.phukien .wrapper 
+{
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
+}
+
+.phukien .buttonWrapper 
+ {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .phukien .buttonWrapper button
+  {
+      margin: 20px;
+  }
+  .phukien .tab-buttontrue 
+   {
+    letter-spacing: 3px;
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .phukien .tab-buttontrue.activetrue 
+  {
+    background-color: #d63031;
+    color: #fff;
+  }
+  .phukien .contenttrue 
+  {
+    display: none;
+    padding: 10px 20px;
+    transition: .5s;
+  }
+.phukien .contenttrue.activetrue 
+{
+    display: block;
+}
+.phukien .contentWrapper .flex
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.phukien .contentWrapper .box
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+    transition: .5;
+    background: #fff;
+}
+.phukien .contentWrapper .box .imgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.phukien .contentWrapper .box .imgBx img
+{
+    max-width: 100%;
+}
+.phukien .contentWrapper .box .textbx
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 10px;
+}
+.phukien .contentWrapper .box .textBx h2
+{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    color: #000;
+    padding-left: 10px;
+    border-left: 5px solid #636e72;
+    transition: .5s;
+}
+.phukien .contentWrapper .box:hover .textBx h2
+{
+    border-left: 5px solid #d63031;
+}
+.phukien .contentWrapper .box .textBx p
+{
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+} 
+
+/* thongsokithuat */
+
+.thongsokithuat
+{
+   
+}
+.thongsokithuat p
+{
+    font-size: 2em;
+    color: #fff;
+}
+.thongsokithuat .tab-buttonthree.activethree 
+{
+  background-color: #d63031;
+  color: #fff;
+}
+.thongsokithuat .wrapper 
+{
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
+}
+  .thongsokithuat .buttonWrapper button
+  {
+      margin: 20px 0;
+  }
+  .thongsokithuat .tab-buttonthree 
+   {
+    letter-spacing: 3px;
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .ts_kythuat{
+    font-size: 15px;
+  }
+
+@media (max-width: 1200px)
+{
+    .menu
+    {
+        display: none;
+        visibility: hidden;
+    }
+}
+@media (max-width: 800px)
+{
+    .tổngquan
+    {
+        padding: 50px 50px;
+    }
+    .thongsokithuat
+    {
+        padding: 50px 50px;
+    }
+    .phukien
+    {
+        padding: 50px 50px;
+    }
+    .tínhnăng
+    {
+        padding: 50px 50px;
+    }
+    .thuvien
+    {
+        padding: 50px 50px;
+    }
+    .ngoaithuc
+    {
+        padding: 50px 50px;
+    }
+    .row
+    {
+        flex-direction: column;
+    }
+    .row .col50
+    {
+        position: relative;
+        width: 100%;
+    }
+    .phukien .buttonWrapper
+    {
+        grid-template-columns: 1fr;
+    }       
+}
+
+

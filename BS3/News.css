@@ -1,0 +1,230 @@
+.top{
+    background-color: cornflowerblue;
+}
+#conainer{
+    margin-top: 100px;
+    padding: 100px 100px;
+}
+a{
+    text-decoration: none;
+
+}
+.pageWidth{
+    margin-left: 150.600px;
+    margin-right: 150.600px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pageContent{
+    width: 1200px;
+    height: auto;
+
+    /* background-color: cyan; */
+}
+.mainContent{
+    display: flex;   
+}
+.Left_Content{
+    width: 900px;
+    height:auto;
+    border: 1px solid black;
+}   
+.Right_Content{
+    width: 370px;
+    height:  auto;
+    padding-left: 10px;
+
+}
+.Top_Content {
+    top: 5px;
+    height: 50px;
+    width: 850px;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid springgreen;
+}
+.Home_Icon{
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+.row_Left{
+    position: absolute;
+    left: 0; 
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 35px;
+    width: 400px;
+}
+.row_Right{
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 35px;
+}
+.CreatNews{
+    flex-grow: 3;
+    position: relative;
+    bottom : 0.5rem;
+}
+.Name_Bar{
+    font-family: "Times New Roman", Times, serif;
+    position: relative;
+    left: 20px;
+    top: 15px;
+    background-image: url(../img/BG.jpg);
+    width: 800px;
+}
+#News_Wolrd{
+    font-size: 12px;
+    color: rgb(150, 150, 150);
+    margin-top: 4px;
+}
+
+.img{
+    height: 50px;
+    width: 50px;
+    border-radius: 5rem;
+    background-color: rgb(128, 9, 9);
+}
+ .Block_News{
+    display: inline-flex;
+} 
+.Title_Text{
+    padding-left: 10px;
+}
+.Timne_News{
+    color: rgb(150, 150, 150);
+}
+
+/* .sorting_1{
+    display: inline-flex;
+} */
+#example_wrapper{
+    position: relative;
+    top:45px;
+}
+.user{
+    color: rgb(150, 150, 150);
+}
+.Date_Items{
+    font-family: 'Times New Roman', Times, serif;
+}
+.table{
+    display: inline-flex;
+}
+#icon{
+    padding-left: 5px;
+}
+.Other__News{
+    /* position: relative;
+    top: 55px;  */
+    padding-top: 50px;
+}
+.Other---News{
+    /* position: relative;
+    top: 20px; */
+    padding-top: 20px;
+}
+.Other_News{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    width: 818px;
+    align-items: center;
+}
+.Other_News{
+    list-style: none;
+}
+.Title_News{
+    padding-bottom: 10px;
+}
+.Name__News{
+    background-image: url(../img/BG.jpg);
+    padding-left: 20px;
+}
+/* .Title_News a{
+    color: black;
+} */
+.Timne_News a:hover{
+    color: red;
+}
+.Other__News h1{
+    padding-left: 20px;
+    background-image: url(../img/BG1.jpg) ;
+}
+/* .Table_Other{
+    display: flex;
+    justify-content: space-between;
+} */
+.Time_Other{
+    position: relative;
+    top:10px;
+    right: 30px;
+    font-size: 15px;
+}
+ul{
+    list-style-type: none;
+}
+.chuyenmuc{
+    color: rgb(150, 150, 150);
+}
+/* tooltip */
+.tooltip {
+  position: relative;
+  display: flex;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/* tooltip */
+#items{
+padding-bottom: 20px;
+}
+.Tag_Content{
+    text-align: center;
+}
+.Name_Content li{
+    float: left;
+    padding-left: 10px;
+}
+button {
+    background: transparent;
+    border-radius: 2rem;
+    width: 120px;
+    height: auto;
+    text-align: center;
+}
+button:hover{
+    background: crimson;
+}
+#ads{
+    height: 250px;
+    width: auto;
+    border:1px solid black;
+    margin-bottom: 10px;
+}
+.ADS__Contens{
+    padding: 10px 10px 5px 5px;
+}
+
+ 
