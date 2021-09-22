@@ -26,6 +26,21 @@
         if ($password != $repassword) {
             warning("Mật khẩu không khớp.");
         }
+        $uppercase = preg_match('@[A-Z]@', $password);
+        // chữ in hoa
+        $lowercase = preg_match('@[a-z]@', $password);
+        // ký tự đặt biệt
+        $number    = preg_match('@[0-9]@', $password);
+        // tối thiểu 8 chữ số
+        if( !$number || strlen($password) < 8) {
+            warning("Mật khẩu tối thiểu 8 chữ số");
+        }
+        if(!$uppercase ||  strlen($password) < 8) {
+            warning("Mật khẩu phải có chữ IN HOA");
+        }
+        if( !$lowercase ||  strlen($password) < 8) {
+            warning("Mật khẩu phải có ký tự đặc biệt !@#$%^&**()");
+        }
 
         $sql = "SELECT * FROM `user` WHERE username = '$username'";
         $old = mysqli_query($conn, $sql);
@@ -47,5 +62,7 @@
         mysqli_query($conn, $sql);
         success("Đăng kí tài khoản thành công");
 
+    }else{
+        error("Vui lòng điền đầy đủ thông tin");
     }
 ?>
